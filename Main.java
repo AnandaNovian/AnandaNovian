@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main{
+public class     GanjilGenap{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.print("Inputkan angka: ");
