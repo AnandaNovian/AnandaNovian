@@ -1,0 +1,54 @@
+nama = input("Masukkan nama Anda: ")
+umur = input("Masukkan umur Anda: ")
+alamat = input("Masukkan alamat Anda: ")
+pekerjaan = input("Masukkan pekerjaan Anda: ")
+
+biodata = """
+Biodata:
+Nama: {}
+Usia: {} tahun
+Alamat: {}
+Pekerjaan: {}
+""".format(nama, umur, alamat, pekerjaan)
+
+print(biodata) 
+Biodata:
+Nama: ujeng
+Usia: 19 tahun
+Alamat: cikidang
+Pekerjaan: mahasiswa
+
+In [3]:
+kalimat = "UNIVERSITAS NUSA PUTRA SUKABUMI"
+
+if kalimat == "UNIVERSITAS NUSA PUTRA SUKABUMI":
+    splitAndLower = kalimat.split(" ")
+    splitAndLower = splitAndLower[1:3]
+    splitAndLower[0],splitAndLower[1] = splitAndLower[1],splitAndLower[0]
+    splitAndLower = " ".join(splitAndLower)
+    splitAndLower = splitAndLower.lower()
+    #########################################################
+    replaceU = kalimat.replace("U", "")
+    #########################################################
+    threeToOne = kalimat.split(" ")
+    threeToOne[0],threeToOne[3] = threeToOne[3],threeToOne[0]
+    threeToOne = " ".join(threeToOne)
+    #########################################################
+    firstLetter = kalimat.split(" ")
+    firstLetter = firstLetter[0][0], firstLetter[1][0], firstLetter[2][0], firstLetter[3][0]
+    firstLetter = "".join(firstLetter)
+    #########################################################
+    splice = kalimat[8:11], kalimat[14:19], kalimat[27:31]
+    splice = splice[0], splice[1].replace(" ", ""), splice[2]
+    splice = " ".join(splice)
+    #########################################################
+    print("a.",splitAndLower)
+    print("b.",replaceU)
+    print("c.",threeToOne)
+    print("d.",firstLetter)
+    print("e.",splice)
+a. putra nusa
+b. NIVERSITAS NSA PTRA SKABMI
+c. SUKABUMI NUSA PUTRA UNIVERSITAS
+d. UNPS
+e. TAS SAPU BUMI
