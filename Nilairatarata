@@ -1,0 +1,12 @@
+let Matematika = 85;
+let BahasaIndonesia = 90;
+let ipa = 78;
+
+let ratarata = (Matematika + BahasaIndonesia + ipa) / 3;
+console.log("Nilai rata-rata :" + (ratarata));
+
+if (ratarata >= 80) {// kondisi jika nilai rata-rata lebih besar atau sama dengan 80
+    console.log("Selamata Anda Lulus!");// output jika kondisi terpenuhi
+} else{// kondisi jika nilai rata-rata kurang dari 80
+    console.log("Maaf Anda Tidak Lulus!");// output jika kondisi tidak terpenuhi
+}
