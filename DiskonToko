@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistem Diskon Toko Online</title>
+</head>
+<body>
+  <h3>Nama: Ananda Novian Dwi Cahya</h3>
+  <h3>NIM: 20240040134</h3>
+  <h3>Kelas: TI24 G</h3>
+
+  <script>
+    function hitungHargaAkhir(totalBelanja) {
+      let diskon = 0;
+      if (totalBelanja > 1000000) {
+        diskon = 0.15;
+      } else if (totalBelanja > 500000) {
+        diskon = 0.10;
+      } else {
+        diskon = 0;
+      }
+      let hargaAkhir = totalBelanja - (totalBelanja * diskon);
+      return hargaAkhir;
+    }
+
+    let input = prompt("Masukkan total belanja Anda:");
+    let totalBelanja = parseInt(input);
+
+    if (!isNaN(totalBelanja)) {
+      let hasil = hitungHargaAkhir(totalBelanja);
+      alert("Total belanja: Rp" + totalBelanja +
+            "\nHarga setelah diskon: Rp" + hasil);
+    } else {
+      alert("Input tidak valid. Harap masukkan angka.");
+    }
+  </script>
+</body>
+</html>
